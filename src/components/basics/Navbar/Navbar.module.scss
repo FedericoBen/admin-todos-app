@@ -1,0 +1,56 @@
+.container_navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 80px;
+  padding: 20px;
+  background-color: #31363f;
+
+  & .container_title {
+    & .title {
+      color: #ffffff;
+    }
+  }
+
+  & .container_actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 20px;
+    padding: 10px;
+
+    & .container_search {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      gap: 8px;
+      padding-left: 8px;
+      border-radius: 8px;
+      background-color: #eeeeee;
+      height: 32px;
+
+      & input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+  }
+}
